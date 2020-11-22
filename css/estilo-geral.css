@@ -33,7 +33,6 @@ h1{
 }
 
 section #div-form{
-   
     width: 500px;
 }
 
@@ -59,7 +58,7 @@ form .input-block label{
 form .input-block input{
     width: 100%;
     display: block;
-    margin-top: 8px;
+    margin-top: 4px;
     padding: 7px;
     font-size: 16px;
     color: #7159c1;
