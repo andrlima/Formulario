@@ -11,7 +11,7 @@ html, body{
 }
 
 body{
-    background-color: #564de0;
+    background-image: url("../img/fundo_01.jpg");
     font-family: Roboto, Arial, sans-serif;
 
 }
@@ -30,6 +30,11 @@ h1{
     margin: 20px 0;
     color:  white;
 
+}
+
+section #div-form{
+   
+    width: 500px;
 }
 
 form{
@@ -51,7 +56,7 @@ form .input-block label{
 
 }
 
-form .intput-block input{
+form .input-block input{
     width: 100%;
     display: block;
     margin-top: 8px;
@@ -63,6 +68,8 @@ form .intput-block input{
     outline-color: #7159c1;
 
 }
+
+
 
 form .btn-enviar{
     display: block;
