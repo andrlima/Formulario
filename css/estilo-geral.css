@@ -11,7 +11,7 @@ html, body{
 }
 
 body{
-    background-color: #696969;
+    background-color: #564de0;
     font-family: Roboto, Arial, sans-serif;
 
 }
@@ -46,7 +46,7 @@ form .input-block{
 }
 
 form .input-block label{
-    font-size: 14px;
+    font-size: 20px;
     color: darkslateblue;
 
 }
@@ -64,3 +64,14 @@ form .intput-block input{
 
 }
 
+form .btn-enviar{
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #1f88b1;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+
+}
