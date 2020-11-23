@@ -7,4 +7,4 @@
 Formulário simples com HTML, CSS e JS.
 
 
-Com validação em todos os campos
+Com validação em todos os campos.
