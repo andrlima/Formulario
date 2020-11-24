@@ -1,0 +1,31 @@
+/* Quuando clicar no login o formulário irá se deslocar para para baixo */
+
+/*Input submit/Cadastrar*/
+form .btn-login{
+    animation: move;
+    animation-duration: 500ms;
+    animation-delay: 1100ms;
+    animation-fill-mode: backwards;
+}
+
+/* Essa classe é adicionada no login de formuláio através do JS */
+.form-baixo{
+    animation: paraBaixo;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+}
+/* Função que faz o formulário de login ir para baixo*/
+@keyframes paraBaixo{
+    from{  
+        transform: translateY(0);
+
+    }
+    to{
+        transform: translateY(100vh);
+        /*vh = Animation view hate */
+
+    }
+
+}
+

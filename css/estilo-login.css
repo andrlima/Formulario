@@ -9,12 +9,3 @@ form .btn-login{
     padding: 7px;
 
 }
-
-
-/*Input submit/Login*/
-form .btn-login{
-    animation: move;
-    animation-duration: 500ms;
-    animation-delay: 1100ms;
-    animation-fill-mode: backwards;
-}
