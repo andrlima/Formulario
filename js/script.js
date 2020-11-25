@@ -8,11 +8,11 @@ btnLogin.addEventListener("click", event =>{
     event.preventDefault();
 
     /* Validação  */
-    const vCampos = [...document.querySelectorAll(".input-block input")];
+    const logCampos = [...document.querySelectorAll(".input-block input")];
     
     /* Verifica os capos vazio, e aplica a animação no formulário */
-    vCampos.forEach(vCampo =>{
-        if(vCampo.value === ""){
+    logCampos.forEach(logCampo =>{
+        if(logCampo.value === ""){
             formLogin.classList.add("form-validacao");
            
         } 
@@ -33,6 +33,7 @@ btnLogin.addEventListener("click", event =>{
     }
     else{
         formLogin.classList.add("form-paraBaixo");
+        
     }
 
 });
@@ -53,3 +54,4 @@ formLogin.addEventListener("animationend", event =>{
     }
    
 });
+
