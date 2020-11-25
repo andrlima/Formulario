@@ -9,12 +9,23 @@ form .btn-login{
 }
 
 /* Essa classe é adicionada no login de formuláio através do JS */
-.form-baixo{
+.form-paraBaixo{
     animation: paraBaixo;
-    animation-duration: 500ms;
+    animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    /*Adiciona um efeito de tempo na saída do formulário*/
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /*animation-timing-function: cubic-bezier(0, 1.2, 0.6, 0.2);*/
 
 }
+
+form .error-validacao{
+    animation: vibracao 500ms;
+
+}
+
+
+
 /* Função que faz o formulário de login ir para baixo*/
 @keyframes paraBaixo{
     from{  
@@ -29,3 +40,22 @@ form .btn-login{
 
 }
 
+/*Efeito de vibração de tela. Possue 4 estado Cima, baixo, direita, esquerda */
+@keyframes vibracao{
+    0%{
+        transform: translateX(0);
+
+    }
+    35%{
+        transform: translateX(-15%);
+
+    }
+    75%{
+        transform: translateX(15%);
+
+    }
+    100%{
+        transform: translate(0);
+    }
+
+}

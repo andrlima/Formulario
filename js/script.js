@@ -4,7 +4,34 @@ const formLogin = document.querySelector("#form-login");
 
 btnLogin.addEventListener("click", event =>{
     event.preventDefault();
-    formLogin.classList.add("form-baixo");
+
+    /* Validação  */
+    const vCampos = [...document.querySelectorAll(".input-block input")];
+    vCampos.forEach(vCampo =>{
+
+        if(vCampo.value === ""){
+            formLogin.classList.add(".error-validacao");
+
+        }
+
+    });
+
+    const formError = document.querySelector(".error-validacao");
+
+    if(formError){
+        formError.addEventListener("animationend", event =>{
+            if(event.animationName === "vibracao"){
+                formError.classList.remove("error-validacao");
+
+            }
+
+        });
+
+    }
+    else{
+        formLogin.classList.add("form-paraBaixo");
+
+    }
 
 });
 
@@ -19,6 +46,7 @@ formLogin.addEventListener("animationstart", event =>{
 formLogin.addEventListener("animationend", event =>{
     if(event.animationName === "paraBaixo"){
         formLogin.style.display = "none";
+        document.querySelector("body").style.overflow = "none";
 
     }
    
