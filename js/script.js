@@ -2,27 +2,30 @@
 const btnLogin = document.querySelector("#btnLogin");
 const formLogin = document.querySelector("#form-login");
 
+
+/* Evento de click no botão login */
 btnLogin.addEventListener("click", event =>{
     event.preventDefault();
 
     /* Validação  */
     const vCampos = [...document.querySelectorAll(".input-block input")];
+    
+    /* Verifica os capos vazio, e aplica a animação no formulário */
     vCampos.forEach(vCampo =>{
-
         if(vCampo.value === ""){
-            formLogin.classList.add(".error-validacao");
-
-        }
+            formLogin.classList.add("form-validacao");
+           
+        } 
 
     });
 
-    const formError = document.querySelector(".error-validacao");
-
+    /*Essa const tem que ficar aqui para repetir o processo */
+    const formError = document.querySelector(".form-validacao");
     if(formError){
         formError.addEventListener("animationend", event =>{
             if(event.animationName === "vibracao"){
-                formError.classList.remove("error-validacao");
-
+                formError.classList.remove("form-validacao");
+                
             }
 
         });
@@ -30,7 +33,6 @@ btnLogin.addEventListener("click", event =>{
     }
     else{
         formLogin.classList.add("form-paraBaixo");
-
     }
 
 });

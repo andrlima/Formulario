@@ -19,12 +19,10 @@ form .btn-login{
 
 }
 
-form .error-validacao{
-    animation: vibracao 500ms;
-
+.form-validacao{
+    animation: vibracao 300ms linear, fade paused;
+   
 }
-
-
 
 /* Função que faz o formulário de login ir para baixo*/
 @keyframes paraBaixo{
@@ -42,7 +40,7 @@ form .error-validacao{
 
 /*Efeito de vibração de tela. Possue 4 estado Cima, baixo, direita, esquerda */
 @keyframes vibracao{
-    0%{
+    0%, 100%{
         transform: translateX(0);
 
     }
@@ -53,9 +51,6 @@ form .error-validacao{
     75%{
         transform: translateX(15%);
 
-    }
-    100%{
-        transform: translate(0);
     }
 
 }

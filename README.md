@@ -1,10 +1,11 @@
 # Formulario
 
+*Formulário simples com HTML, CSS e JS.*
+
+Formulário animado usando os keyframes do CSS e a validação com JS.
 
 
 ![](img/Modelo.png)
 
-Formulário simples com HTML, CSS e JS.
 
-
-Com validação em todos os campos.
+Todos os .css e .js eu deixei saparados e comentados para o melhor entendimento do código.
