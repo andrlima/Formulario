@@ -9,3 +9,5 @@ Formulário animado usando os keyframes do CSS e a validação com JS.
 
 
 Todos os .css e .js eu deixei saparados e comentados para o melhor entendimento do código.
+
+![](img/Modelo2.png)
